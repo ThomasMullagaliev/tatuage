@@ -14,11 +14,13 @@
         background-size: cover 
         width: 25px
         height: 25px
+
 .h2
     font-size: 40px
     font-weight: bold
     padding-left: 15%
     text-align: center
+    padding-top: 10px
 .phone
     font-size: 16px
     font-weight: bold
@@ -28,7 +30,8 @@
     border: 2px solid #ffffff
     padding: 10px 10px
     border-radius: 30px
-    font-size: 20px
+    padding-left: 35px
+    font-size: 18px
     font-weight: bold
     text-transform: uppercase
     transition: all 0.8s ease
@@ -37,6 +40,23 @@
         color: #C357F4
         text-decoration: none
         border: 2px solid #C357F4
+        &:after
+            background-image: url(../img/phone2.svg)
+
+    &:after
+        top: 3px
+        left: 28px
+        position: absolute
+        display: block
+        content: " "
+        background-image: url(../img/phone1.svg)
+        background-size: cover 
+        width: 20px
+        height: 20px
+        transition: all 0.8s ease  
+        &:hover
+            background-image: url(../img/phone2.svg)
+
 .text-right
     text-align: right
 .nav
